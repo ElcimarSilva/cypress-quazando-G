@@ -1,8 +1,9 @@
-it('test fixture', () => {
-    cy.fixture('example').then(examples => {
-        this.examples = examples;
+it('test fixture', function() {
+    cy.fixture('dev/example').then(examples => {
+        examples = examples;
+        cy.log(examples.name)
+        cy.log(examples.email)
+        cy.log(examples.body)
     })
-    cy.log(this.examples.name)
-    cy.visit('https://example.cypress.io/todo')
 
 });
