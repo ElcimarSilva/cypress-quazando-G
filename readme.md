@@ -18,3 +18,6 @@
 # Instalar dependencias
 - npm install
 
+# Quando der erro de versão do cypress 
+ - npx cypress cache clear
+ - npx cypress install --force
