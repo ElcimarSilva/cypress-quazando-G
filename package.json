@@ -4,12 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run:tag-ok": "npx cypress run --env grepTags=ok",
+    "run:tag-critico": "npx cypress run --env grep=critico"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^10.1.0"
+    "cypress-grep": "^3.0.4"
+  },
+  "devDependencies": {
+    "@cypress/grep": "^3.1.4",
+    "cypress": "^12.5.1"
   }
 }
